@@ -32,6 +32,7 @@ jobs:
     - name: Run a multi-line script (build the ISO)
       run: |
         sudo apt update
+        sudo apt upgrade
         sudo apt install debos p7zip qemu-utils zerofree
         cd $GITHUB_WORKSPACE
         chmod +x scripts/tl/*.sh
